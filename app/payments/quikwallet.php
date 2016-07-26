@@ -1,7 +1,7 @@
 <?php
 use Tygh\Registry;
 
-include_once ('razorpay/razorpay_common.inc');
+include_once ('quikwallet/quikwallet_helper.inc');
 
 if ( !defined('AREA') ) { die('Access denied'); }
 
