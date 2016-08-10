@@ -257,8 +257,17 @@ if (defined('PAYMENT_NOTIFICATION')) {
                     }
                 } else {
                     //print "Invalid response, please try again <hr>\n";
-                    fn_set_notification('E', __('error'), __('text_qw_auth_error').$_REQUEST['order_id']);
-                    fn_order_placement_routines('checkout_redirect');
+                    $pp_response['order_status'] = 'D';
+                    $pp_response['reason_text'] = "Your Order #".$order_id." was not completed due to SECURITY Error!, please refer Quikwallet Payment reference ID ".$id;
+                    $pp_response['transaction_id'] = $order_id;
+                    $pp_response['client_id'] = $id;
+
+                    fn_finish_payment($order_id, $pp_response);
+                    //fn_set_notification('E', __('error'), "Your Order #".$order_id." was not completed due to SECURITY Error!, please refer Quikwallet Payment reference ID ".$id);
+                    fn_order_placement_routines('route', $order_id);
+
+
+                    //fn_order_placement_routines('checkout_redirect');
                 }
             }
         }

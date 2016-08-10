@@ -13,9 +13,10 @@ QuikWallet is a payment gateway providing Visa, Master Card, American Express an
 1. Log into CS-Cart as administrator (http://cscart_installation/admin.php). Navigate to Administration / Payment Methods.
 2. Click the "+" to add a new payment method.
 3. Choose QuikWallet from the list and then click save. For template, choose "cc_outside.tpl"
-4. Click the 'Configure' tab.
-5. ENter your  Partner ID, Partner Secret and QuikWallet Server URL shared with you from QuikWallet.
-6. Click 'Save'
+4. In Icon field towards bottom of General tab , upload logo.png from this repo
+5. Click the 'Configure' tab.
+6. Enter your  Partner ID, Partner Secret and QuikWallet Server URL shared with you from QuikWallet.
+7. Click 'Save'
 
 Example
 
