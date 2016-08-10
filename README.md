@@ -5,7 +5,7 @@ QuikWallet is a payment gateway providing Visa, Master Card, American Express an
 ## Installation
 1. Ensure you have latest version of CS Cart installed.
 2. Download the zip of this repo.
-3. Inside the file downloaded above is a file called 'install.quikwallet.sql'. This has to be executed against your cscart database. You can use phpmyadmin to import the file into your cscart database or copy paste the content and run directly into your mysql shell.
+3. Inside the file downloaded above is a file called 'install_quikwallet.sql'. This has to be executed against your cscart database. You can use phpmyadmin to import the file into your cscart database or copy paste the content and run directly into your mysql shell.
 4. Upload rest of the contents of the plugin to your CS Cart Installation directory (content of app folder goes in app folder, content of design folder in design folder).
 
 ## Configuration
